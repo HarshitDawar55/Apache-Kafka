@@ -11,3 +11,10 @@ kafka-topics.sh --zookeeper localhost:2181 --topic <topic name> --create --parti
   
 ## Listing the Topics in the Kafka Cluster
 kafka-topics.sh --zookeeper localhost:2181 --list
+  
+## Deleting the Topic in the Kafka Cluster
+kafka-topics.sh --zookeeper localhost:2181 --topic <topic name> --delete
+  
+
+## Using a Producer in the Kafka Cluster
+kafka-console-producer.sh --broker-list localhost:9092 --topic <topic name to produce to>
