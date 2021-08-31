@@ -18,3 +18,9 @@ kafka-topics.sh --zookeeper localhost:2181 --topic `<topic name>` --delete
 
 ## Using a Producer in the Kafka Cluster
 kafka-console-producer.sh --broker-list localhost:9092 --topic `<topic name to produce to>`
+
+## Using a Consumer in the Kafka Cluster (To read from beginning)
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic `<topic name to read from>` --from-beginning
+
+## Using a Consumer in the Kafka Cluster (To read only new messages)
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic `<topic name to read from>`
