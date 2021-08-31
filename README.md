@@ -24,3 +24,6 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic `<topic name
 
 ## Using a Consumer in the Kafka Cluster (To read only new messages)
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic `<topic name to read from>`
+
+## Using a Consumer in a Consumer Group in the Kafka Cluster 
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic `<topic name to read from>` --group `<group name>`
