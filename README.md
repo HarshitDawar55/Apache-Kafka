@@ -27,3 +27,9 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic `<topic name
 
 ## Using a Consumer in a Consumer Group in the Kafka Cluster 
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic `<topic name to read from>` --group `<group name>`
+
+## Getting the Consumer Groups
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+
+## Describing a Consumer Groups
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group `<Consumer Group Name>`
